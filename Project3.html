@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Fittness</title>
+    <style>
+        .header {
+            background-color: rgb(97, 80, 80);
+            width: 50%;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header li {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 0px 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: grey;
+
+        }
+
+        .header li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header li:hover {
+            text-decoration: none;
+            background-color: black;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+            height: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #home::before {
+            content: " ";
+            position: absolute;
+            top: 0px;
+            height: 85%;
+            width: 100%;
+            background: url('DonateMoney.jpg') no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #home p {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .h-primary {
+            padding: 12px;
+            font-size: 3.8rem;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin-top: 10px;
+
+        }
+
+        .btn {
+            cursor: pointer;
+            background-color: brown;
+            border: 4px solid white;
+            padding: 6px 20px;
+            border-radius: 10px;
+            color: white;
+            margin: 17px;
+        }
+
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            margin: 50px 30px;
+            padding: 20px 20px;
+            border-radius: 15px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #services .box img {
+            display: block;
+            height: 100px;
+            margin: auto;
+        }
+        
+
+        
+
+      /*  .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        */
+        .help{
+            display: flex;
+            margin: 10px;
+           
+        }
+        .card{
+            margin: 10px 20px;
+            padding: 10px 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help for poor</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <section id="home">
+        <h1 class="h-primary">Help for poor people</h1>
+        <p>Helping the poor means helping a needy person in terms of money or any other stuff e.g. Food, Clothes,
+            household stuff or grocery. This is a very generous act and is loved in all the religions and countries of
+            the world.</p>
+        <p>
+            Every religion whether Christianity, Hinduism or Islam taught us to help the poor people in time of their
+            needs. This will bring GOD”S Happiness and Blessings on you and in the family.
+        </p>
+        <button class="btn"><a href="http://localhost/wordpress/index.php/donations/donation-for-help-the-poor-person/#" target="_blank">Donate Money</a></button>
+
+    </section>
+    <section id="Money">
+        <div id="services">
+            <div class="box">
+                <img src="Education.jpg">
+                <h2 class="h-secondary center">Education</h2>
+                <p class="center">Education is the primary source for children to keep their life in safe way. This
+                    project provides education material to poor children upto elementary section. Basic education
+                    material required for their studies without any interruption is our goal.
+                </p>
+            </div>
+            <div class="box">
+                <img src="Food.jpg">
+                <h2 class="h-secondary center">Feed a Hungry Child</h2>
+                <p class="center">
+                    Donate to provide supplemental food, vitamins and medical care to malnourished children and to
+                    support our therapeutic feeding and food stability initiatives for infants and newborns.
+                </p>
+            </div>
+            <div class="box">
+                <img src="HomeLess.jpg">
+                <h2 class="h-secondary center">Build a Home for Slum Children </h2>
+                <p class="center">This project will build a residential children's home for 75 street/slum children in
+                    South Goa, India. There are thousands of children living on the streets in Goa alone for a number of
+                    different reasons. Some are orphans, others are runaways who are trying to escape the horrors that
+                    surround their daily lives, and others are the children of migrants from poorer states in India who
+                    work at construction sites.
+                </p>
+            </div>
+        </div>
+    </section>
+    <h1>Another Way to Help the poor</h1>
+    <section class="About">
+        <div class="help">
+            <div class="card" >
+                <img src="helpbycloth.jpg" class="center">
+                <div class="card-body">
+                    <p class="card-text"><b>Collect your old clothes and donate-</b> If you get bored from your clothes
+                        and wanted to get rid of
+                        them.
+                        Don’t throw them away in fact collect them and give them to those who has need them.</p>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="helpbyfood.jpg" class="center">
+                <div class="card-body">
+                    <p class="card-text"><b>Plan a day to give food once in a week-</b> First of all don’t waste food at
+                        any cost. You have no
+                        idea how many poor people sleep empty stomach every day while you waste food.
+                        Giving food is one of the best charities you can do. So, try to plan to serve food to the hungry
+                        people once in a week.</p>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="helpbytution.jpg" class="center">
+                <div class="card-body">
+                    <p class="card-text"><b>Give free Tuition to poor children-</b>There is no bigger help than to
+                        educate a person. Education is
+                        a light of life. If you see a child needs help in studies and can’t afford it. Give a helping
+                        hand to
+                        that child and offer free tuitions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
